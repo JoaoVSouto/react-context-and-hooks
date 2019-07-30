@@ -28,7 +28,6 @@ body {
 
 .book-list {
   margin: 20px;
-  padding-bottom: 5px;
 }
 
 .book-list ul {
@@ -42,7 +41,7 @@ body {
   padding: 10px;
   cursor: pointer;
   margin: 10px 0;
-  transition-duration: 0.3s;
+  transition-duration: 0.2s;
 }
 
 .book-list li:hover {
@@ -64,5 +63,27 @@ body {
 .empty {
   margin: 20px;
   text-align: center;
-  padding-bottom: 20px;
+}
+
+form {
+  padding: 20px;
+}
+
+input[type='text'] {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 6px 0;
+  background-color: #3c1f3c;
+  color: white;
+  border: none;
+}
+
+input[type='submit'] {
+  display: block;
+  margin: 10px auto;
+  background-color: #eee;
+  border: none;
+  padding: 6px 20px;
+  cursor: pointer;
 }

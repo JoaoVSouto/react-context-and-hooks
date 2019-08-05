@@ -79,11 +79,35 @@ input[type='text'] {
   border: none;
 }
 
-input[type='submit'] {
+button {
+  z-index: 1;
   display: block;
+  position: relative;
   margin: 10px auto;
-  background-color: #eee;
+  color: white;
+  padding: 0.5em 1em;
+  outline: none;
   border: none;
-  padding: 6px 20px;
+  background-color: #6d3d6d;
   cursor: pointer;
+}
+
+button::before {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border: 4px solid #6d3d6d;
+  transform-origin: center;
+  transform: scale(1);
+}
+
+button:hover::before {
+  transition: all 0.6s ease-in-out;
+  transform-origin: center;
+  transform: scale(1.75);
+  opacity: 0;
 }
